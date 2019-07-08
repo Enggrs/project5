@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="imagehover.css">
+    <style>
+         html,body
+     {
+       margin: 0%;
+       padding: 0%;
+     }
+     body::-webkit-scrollbar
+     {
+         width: 4px;
+     }
+     body::-webkit-scrollbar-thumb
+     {
+       background-color: black;
+     }
+ 
+     *
+     {
+         box-sizing: border-box;
+     }
+     .one
+     {
+        height: 80vh;
+         width: 100%;
+        background-image: url('6.jpg');
+        background-size: cover;
+         display: flex;
+        
+         justify-content: center;
+         align-items: center;
+     }
+     .one1
+     {
+        height: 40%;
+         width: 60%;
+        
+         font-size: 70px;
+        font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 72px;
+        color:rgba(255 , 255  , 255, 0.4);
+        display: flex;
+        opacity: .8%;
+
+     }
+     
+     .two
+     {
+        height: 30vh;
+         width: 100%;
+        
+         position: relative;
+         background-color:rgb(103, 122,191);
+     }
+     .two::before
+    {
+            content: '';
+            width: 9%;
+            height: 40%;
+            position: absolute;
+           border-top-left-radius: 20%;
+           transform: translateX(-50%) rotateZ(46deg);
+            background-color:rgb(103, 122,191);
+            position: absolute;
+            top:-2%;
+           left: 48%;   
+    }
+    .two1
+    {
+        height: 70%;
+         width: 60%;
+        
+         position: absolute;
+         left: 17%;
+         top: 15%;
+    }
+    .twotxt
+    {
+        font-size: 15px;
+        font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 7px;
+        color:white;
+        position: absolute;
+        left: 7%;
+         
+    }
+    .two1txt
+    {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+        color:white;    
+    }
+    .three
+    {
+        height: 80vh;
+         width: 100%;
+         
+         display: flex;
+         position: relative;
+
+    }
+    .three1
+    {
+        height: 80%;
+         width: 40%;
+         
+         margin: 2%;
+         position: absolute;
+         top: 4%;
+    }
+    .three1txt
+    {
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 6px;
+        color:black;
+        font-family: 'Josefin Sans', sans-serif;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    }
+    .thrtxt
+    {
+        font-size: 20px;
+        color:black;
+        font-family: 'Comic Sans MS', sans-serif;
+        text-align: left;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 2%;
+        position: absolute;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+    }
+    .three2
+    {
+        height: 80%;
+         width: 25%;
+         
+        background-image: url('a.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+         position: absolute;
+         top: 15%;
+         left: 43%;
+
+    }
+    .three3
+    {
+        height: 95%;
+         width: 30%;
+        
+         background-image: url('c.png');
+        background-size: 97% 97%;
+        
+         position: absolute;
+         top: 2%;
+         left: 70%;
+    }
+    .four
+    {
+           width: 100%;
+           height: 100vh;
+           display: flex;
+           position: relative;
+           overflow: hidden;
+    }
+
+    .half1
+    {
+           width: 40%;
+           height: 100%;
+          
+           background-image: url('7.jpg');
+           background-size: cover;
+    }
+
+    .half2
+    {
+           width: 60%;
+           height: 100%; 
+           background-color: rgb(59, 62, 77);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+    }
+    .img
+    {
+            width: 25%;
+            height: 80%;
+            
+            position: absolute;
+            left: 17%;
+            top: 50%;
+            transform: translate(35%,-40%);
+            background-image: url('d.png');
+            background-repeat: no-repeat;
+            background-position: center;
+    }
+    .half2a
+    {
+            width: 70%;
+            height: 90%;
+           margin-left: 8%;
+            display: flex;
+            flex-wrap: wrap;
+         
+    }
+    .hlf1,.hlf2,.hlf3,.hlf4,.hlf5
+    {
+           width: 100%;
+            height: 20%;
+          
+            display: flex;
+    }
+    .hlf1txt
+    {
+        font-size: 17px;
+        color:white;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: left;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+        color:rgba(255 , 255  , 255, 0.8);
+    }
+    .hlf2a,.hlf2b,.hlf3a,.hlf3b,.hlf4a,.hlf4b,.hlf5a,.hlf5b
+    {
+        width: 35%;
+            height: 100%;
+         
+             
+    }
+    .hlf2a,.hlf3a,.hlf4a,.hlf5a
+    {
+       background-image: url('DOPE.png');
+       background-size: 88% 97%;
+       background-repeat: no-repeat;
+    }
+    .hlf2b,.hlf3b,.hlf4b,.hlf5b
+    {
+        width: 65%;
+        font-size: 15px;
+        font-weight: bolder;
+        letter-spacing: .3px;
+        color:white;
+        font-family: 'Comic Sans MS', sans-serif;
+        color:rgba(255 , 255  , 255, 0.4);
+    }
+    .five
+    {
+            width: 100%;
+            height: 80vh;
+            
+            display: flex;
+    }
+    .five1,.five2
+    {
+           width: 100%;
+            height: 100%;
+            
+            display: flex;
+            flex-wrap: wrap;
+    }
+    .five1a,.five1b
+    {
+           width: 100%;
+            height: 50%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: azure;
+           
+    }
+    .five2a,.five2b,.five2c,.five2d
+    {
+          width: 50%;
+            height: 50%;
+           
+            display: flex;
+    }
+    .five1atxt
+    {
+        width: 60%;
+        height: 70%;
+       background-color: azure;
+        font-size: 16px;
+        font-weight: bolder;
+        letter-spacing: .3px;
+        
+        font-family: 'Comic Sans MS', sans-serif;
+    }
+    .five1b
+    {
+        background-image: url('2.jpg');
+        background-size: cover;
+    }
+    .overlay
+    {
+        width: 100%;
+        height: 100%;
+        background-color:azure;
+        opacity: 0.2;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+    .five2a
+    {
+        background-image: url('3.jpg');
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .five2atxt
+    {
+      
+        color: white;
+        font-size: 22px;
+        font-weight: bolder;
+        letter-spacing: .8px;
+        font-family: 'Comic Sans MS', sans-serif;
+        color:rgba(255 , 255  , 255, 0.6);
+
+    }
+    .five2b
+    {
+        background-image: url('8.jpg');
+        background-size: cover;   
+    }
+    .five2c
+    {
+        background-image: url('9.jpg');
+        background-size: cover;  
+    }
+    .five2d
+    {
+        background-image: url('10.jpg');
+        background-size: cover;  
+    }
+     .six
+     {
+        height: 90vh;
+        width: 100%;
+       
+        display: flex; 
+     }
+     .six1,.six2
+     {
+        height: 100%;
+        width: 50%;
+        
+     }
+     .six1
+     {
+        background-color:rgb(50, 54,65);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+       
+        
+     }
+     .six2
+     {
+        background-image: url('11.jpg');
+        background-size: cover; 
+     }
+     .six1::before
+     {
+        content: '';
+            width: 9%;
+            height: 20%;
+            position: absolute;
+           border-top-right-radius: 20%;
+           transform: translateX(-50%) rotateZ(45deg);
+            background-color:rgb(50, 54,65);
+             left: 46%;
+             margin-top: 1%;
+             z-index: 300;
+     }
+     .six1a
+     {
+         
+        height: 75%;
+        width: 70%;
+       
+     }
+     .six1txt
+     {
+        color: white;
+        font-size: 22px;
+        font-weight: bolder;
+        letter-spacing: .8px;
+        font-family: 'Comic Sans MS', sans-serif;
+        color:rgba(255 , 255  , 255, 0.4);
+     }
+     .seven
+     {
+        height: 100vh;
+        width: 100%;
+      
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+     }
+     .line
+    {
+      width: .5%;
+      height: 95vh;
+    background-color: black; 
+    position: absolute;
+    left: 50%;
+
+    }
+    .seven1,.seven2
+    {
+        width: 40%;
+      height: 80%;
+      overflow: hidden;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+        
+
+    }
+    .seven1
+    {
+       background-image: url('12.jpg');
+       background-size: 100% 100%;
+       background-repeat: no-repeat;
+       margin: .5%;
+    }
+    .seven2
+    {
+        background-color:rgb(50, 54,65);
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        
+    }
+    .circle
+    {
+        width: 8%;
+            height:8%;
+            color: white;
+            font-size: 30px;
+            background-color: black;
+            border-radius: 50px;
+            position: absolute;
+            top:1%;
+            margin: -1%;
+            left: 47.2%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+    .seventxt
+    {
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+        letter-spacing: .8px;
+        overflow: hidden;
+        font-family: 'Comic Sans MS', sans-serif;       
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        color:rgba(255 , 255  , 255, 0.3);  
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    }
+    .eight
+    {
+        height: 70vh;
+        width: 100%;
+       
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .eight1,.eight2
+    {
+        height: 50%;
+        width: 100%;
+     
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .eight2::before
+    {
+        content: '';
+            width: 9%;
+            height: 40%;
+            position: absolute;
+           border-top-left-radius: 12%;
+           transform: translateX(-50%) rotateZ(46deg);
+            background-color:white;
+            position: absolute;
+            top:-2%;
+           left: 50%;
+    }
+    .eight1
+    {
+       background-image: url('map.jpg');
+       
+    }
+    .eight1a
+    {
+      height: 40%;
+      width: 10%;
+      background-color: azure;
+      border-radius: 50%;
+      position:absolute;
+      top: 40%;
+      left: 45%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .eight1a::before
+    {
+        content: '';
+            width: 30%;
+            height: 30%;
+            position: absolute;
+           transform: translateX(-50%) rotateZ(76deg);
+            background-color:azure;
+            z-index: 300;
+            left: 80%;
+            top: 6%;
+            
+    }
+    .overlay1
+    {
+        width: 100%;
+        height: 100%;
+        background-color:black;
+        opacity: 0.8;
+        display: flex;
+        overflow: hidden;
+        
+    }
+    .ovr1
+    {
+        background-image: url('a.png');
+        background-size: 97% 98%;
+        top: 10%;
+        z-index: 30000;
+        position: absolute;
+        width: 20%;
+        height: 80%;
+        background-position: center;
+        color: white;
+        left: 5%;
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.7));
+    }
+    .ovr2
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: left;
+        font-weight: bolder;
+        z-index: 300000;
+        position: absolute;
+       
+        left: 35%;
+       top: 25%;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);  
+    }
+    .ovr3
+    {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: left;
+        font-weight: bolder;
+        z-index: 300000;
+        position: absolute;
+       
+        left: 66%;
+       top: 25%;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3); 
+    }
+    </style>
+</head>
+<body>
+    <div class="one">
+        
+        <div class="one1 wow fadeIn Up animated" data-wow-delay=".6s">PASSION</div>
+        <div class="one1a"></div>
+    </div>
+    <div class="two">
+        <div class="two1">
+            <div class="twotxt wow fadeIn Up animated" data-wow-delay=".8s" >
+                <h1 >Meet the New & Updated Collection</h1>
+                <p class="two1txt wow bounceInRight animated" data-wow-delay="1.4s">Contact For Best Confort</p>
+            </div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="three1">
+            <div class="three1txt wow fadeIn Up animated" data-wow-delay=".5s">
+                <h1>Welcome!</h1> <h2>You will Love it....</h2>
+                    <p class="thrtxt wow fadeIn Up animated" data-wow-delay="1.4s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! Incidunt necessitatibus fugit optio.
+                    </p>
+            </div>
+        </div>
+        <div class="three2 hvr-pulse"></div>
+        <div class="three3 hvr-pulse"></div>
+    </div>
+    <div class="four">
+            <div class="half1"></div>
+            <div class="half2">
+                <div class="half2a">
+                    <div class="hlf1">
+                        <div class="hlf1txt wow fadeIn Up animated" data-wow-delay=".4s">
+                            <h1>Explore! You will LOve it ....</h1>
+                        </div>
+
+                    </div>
+                    <div class="hlf2">
+                        <div class="hlf2a hvr-pulse"></div>
+                        <div class="hlf2b wow fadeIn Up animated" data-wow-delay="1s">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! Incidunt necessitatibus fugit optio.</p>
+                        </div>
+                    </div>
+                    <div class="hlf3">
+                        <div class="hlf3a hvr-pulse"></div>
+                        <div class="hlf3b wow fadeIn Up animated" data-wow-delay="1.9s">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! Incidunt necessitatibus fugit optio.</p>
+                        </div>
+                    </div>
+                    <div class="hlf4 ">
+                        <div class="hlf4a hvr-pulse"></div>
+                        <div class="hlf4b wow fadeIn Up animated" data-wow-delay="2.8s">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! Incidunt necessitatibus fugit optio.</p>
+                        </div>
+                    </div>
+                    <div class="hlf5">
+                        <div class="hlf5a hvr-pulse"></div>
+                        <div class="hlf5b wow fadeIn Up animated" data-wow-delay="3.7s">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! Incidunt necessitatibus fugit optio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img hvr-pulse"></div>
+    </div>
+    <div class="five">
+        <div class="five1">
+            <div class="five1a">
+                <div class="five1atxt wow fadeIn Up animated" data-wow-delay="1s">
+                    <h2 >What We Do?</h2>
+                    <h1>You will love it....</h1>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <h4><a href="..\cloth\gallery\gallery.html"> View Gallery></a></h4>
+                </div>
+            </div>
+            <div class="five1b">
+                <div class="overlay"></div>
+               
+            </div>
+        </div>
+        <div class="five2">
+                <div class="five2a hvr-pulse">
+                    <div class="five2atxt">
+                        <div class="overlay"></div>
+                        <h2>Urban Spirit</h2>
+                    </div>
+                </div>
+                <div class="five2b hvr-pulse"></div>
+                <div class="five2c hvr-pulse"></div>
+                <div class="five2d hvr-pulse"></div>
+                
+        </div>
+
+    </div>
+    <div class="six">
+        <div class="six1">
+            <div class="six1a">
+                <div class="six1txt wow fadeIn Up animated" data-wow-delay=".8s">
+                    <h2 style="color:rgba(255 , 255  , 255, 0.9);">We Enjoy Working..</h2>
+                    <br>
+                    <h1>Directly With You</h1>
+                    <br>
+                    <p class="six1txt wow fadeIn Up animated" data-wow-delay="2s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! Incidunt necessitatibus fugit optio.
+                       
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="six2 hvr-pulse">
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="seven">
+        <div class="line"></div>
+        <div class="seven1">
+                <figure class="imghvr-shutter-out-diag-1" style="height:100%;width:100%;">
+                        <img src="12.jpg" style="height:100%;width:100%;">
+                        <figcaption style="height:100%;width:100%; background-image:url('13.jpg');">
+        </div>
+        <div class="seven2">
+            <div class="seventxt wow fadeIn Up animated" data-wow-delay=".8s">
+                <h1 style="color:rgba(255 , 255  , 255, 0.7);">Enjoy the Casual Fashion...</h1>
+                <br>
+                <br>
+                <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quisquam quia autem ipsa minima, sit officiis fuga impedit
+                     blanditiis voluptates nihil! Incidunt necessitatibus fugit
+                     optio.
+                    <br>
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quisquam quia autem ipsa minima, sit officiis fuga impedit blanditiis voluptates nihil! 
+                    Incidunt necessitatibus fugit optio.
+                 </p>
+            </div>
+        </div>
+        <div class="circle"></div>
+    </div>
+    <div class="eight">
+        <div class="eight1">
+             <div class="overlay1">
+            <div class="eight1a hvr-pop">
+                <h1>121</h1>
+                <p>THANKS..</p>
+                   </div>
+            </div>
+        </div>
+        <div class="eight2">
+                <div class="ovr1 wow fadeInUp animated"></div>
+                
+                <div class="ovr2 wow fadeInUp animated">
+                        <h1>Connect Us</h1>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <p>welcome to this portal.....</p>
+                       
+                    </div>
+                    <div class="ovr3">
+                        <div class="eighttxt wow fadeInUp animated">
+                            <h1><i class="fab fa-twitter "></i>Tweets..</h1>
+                            <p ><i class="fab fa-twitter ">
+                                </i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+
+    <script src="wow.js">
+    </script>
+    <script>
+         new WOW().init();
+    </script>
+</body>
+</html>
